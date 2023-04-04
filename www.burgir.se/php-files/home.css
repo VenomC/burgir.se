@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling för container */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: lightgray;
+}
+
+/* Styling för logga */
+.logo-container {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.logo-container img {
+  width: 150px;
+  height: auto;
+}
+
+/* Styling för knappar */
+.knapp {
+  position: relative;
+  flex-basis: calc(33.33% - 10px);
+  max-width: 200px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 5px;
+  margin-top: -50px;
+}
+
+/* Styling för bilder */
+.knapp img {
+  width: 100%;
+  height: auto;
+}

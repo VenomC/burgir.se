@@ -1,0 +1,1454 @@
+
+/*-----------------------------------------------------------------------------------*/
+/* COLORS
+
+Blue: 
+Flarie topbar blue: #619af3;
+Flarie Darkest blue: #3c68b0;
+Flarie Middle Blue: #4e87e3
+
+Lightblue: #58c0ed;
+Green: #46bb97;
+Red: #d54651;
+
+Darkest Gray: #434a55;
+Dark Gray: #666d79;  
+Gray: #aab1be
+Soft Gray: #ccd1da
+Softest Gray: #e7e9ee;
+
+/*-----------------------------------------------------------------------------------*/
+/* THE GRID																			
+/*-----------------------------------------------------------------------------------*/
+
+.content { width: 1020px; margin: 0 auto;}
+
+.one { width: 8.33333%; }
+.two { width: 16.66667%; }
+.three { width: 25%; }
+.four { width: 33.33333%; }
+.five { width: 41.66667%; }
+.six { width: 50%; margin: auto; }
+.seven { width: 58.33333%; margin: auto; }
+.eight { width: 66.66667%; margin: auto; }
+.nine { width: 75%; margin: auto; }
+.ten { width: 83.33333%; }
+.eleven { width: 91.66667%; }
+.twelve { width: 100%; }
+
+.column, .columns { float: left; min-height: 1px; padding: 0px; position: relative; }
+.column.centered, .columns.centered { float: none; margin: 0 auto;}
+
+
+/*-----------------------------------------------------------------------------------*/
+/* GLOBAL STYLES
+/*-----------------------------------------------------------------------------------*/
+
+body 
+{
+  font-family: Helvetica Neue;
+  /* background-color: #f00; */
+  position:relative;
+  margin:0;
+}
+
+h1 { 
+	display:none;
+	color:#fff;
+	font-weight:400;
+	font-size:34px;
+	line-height: 1.4;
+	margin:30px 0px 10px;
+	font-family: Helvetica Neue;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+	text-decoration: none;
+}
+h2 { font-size: 20px;	}
+h3 { font-size: 45px;	}
+h4 { font-size: 16px;	}
+h5 { font-size: 14px;	}
+h6 { font-size: 12px;	}
+
+p { 
+  font-size: 12px;
+  font-color:#000;
+  font-weight: 300;
+  font-family: Helvetica Neue;
+}
+
+
+.no-padding {padding:0px;}
+.space10 {margin-bottom:10px;}
+.space15 {margin-bottom:15px;}
+.space20 {margin-bottom:20px;}
+.space25 {margin-bottom:25px;}
+.space30 {margin-bottom:30px;}
+.space35 {margin-bottom:35px;}
+.space40 {margin-bottom:40px;}
+.space50 {margin-bottom:50px;}
+.space60 {margin-bottom:60px;}
+.space70 {margin-bottom:70px;}
+.space80 {margin-bottom:80px;}
+.space90 {margin-bottom:90px;}
+.space100 {margin-bottom:100px;}
+.space110 {margin-bottom:110px;}
+.space120 {margin-bottom:120px;}
+.space130 {margin-bottom:130px;}
+.space140 {margin-bottom:140px;}
+.space150 {margin-bottom:150px;}
+.space160 {margin-bottom:160px;}
+.space170 {margin-bottom:270px;}
+
+.video {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+}
+
+.video iframe,
+.video object,  
+.video embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+a {
+text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:link, a:visited, a:active {text-decoration: none;}
+
+/*-----------------------------------------------------------------------------------*/
+/* LOGO CONTAINER - topbar
+/*-----------------------------------------------------------------------------------*/
+
+
+.logo {
+  position:absolute; /* positon makes the menubar be a 100% of the screen */
+  left:0px;
+  height: 54px;
+  right:0px;
+  top:0px;
+  text-align: center;
+  z-index:5;
+  background: #434a55;  /* Header background */
+}
+
+.logo img {
+	padding: 15px 0px 10px 0px;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/* BACKGROUNDCONTAINER - BLUEBACKGROUND ON INDEXPAGE
+/*-----------------------------------------------------------------------------------*/
+
+
+.backgroundContainer {
+  position:relative; /* positon makes the menubar be a 100% of the screen */
+  height:100%;
+  width: 100%;
+  margin:0 auto;
+  text-align: center;
+  background: #58c0ed;  /* Header background */
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/* HOMEPAGE - only screen and (min-width: 737px)
+/*-----------------------------------------------------------------------------------*/
+
+#homepage {
+  /*display: none;*/
+  position: relative; /* positon makes the menubar be a 100% of the screen */
+  margin: 0 auto;
+  height:450px;
+  width: 668px;
+  padding: 110px 0px 0px 0px;
+  background: #58c0ed;  /* Header background 58c0ed */
+}
+
+#homepage img {
+    margin-top: 100px;
+    text-align: center;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* ARROWHOLDER - Bouncing arrow holder. 
+/*-----------------------------------------------------------------------------------*/
+
+.arrowholder {
+  position: relative; /* positon makes the menubar be a 100% of the screen */
+  margin: 0 auto;
+  width: 100%;
+  padding: 40px 0px 0px 0px;
+  background: #58c0ed;  /* Header background 58c0ed */
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* FOOTER 
+/*-----------------------------------------------------------------------------------*/
+
+#footer {
+	position:relative;
+	padding:60px 0 220px;
+	background:#fff; /* url(../images/indexcsv.png) repeat fixed; */ /* Background color for the people div */
+	font-family: Helvetica Neue;
+	text-align: center;
+	margin-bottom: 120px;
+	border-top: 1px solid #666d79;
+	/* background:#00a8ec url(../images/quote-bg.jpg) repeat fixed; */
+}
+
+#footer h3 {
+	color:#666d79;
+	font-weight:400;
+	font-size:13px;
+	line-height: 1.4;
+	margin:0px 0px 10px;
+	font-family: Helvetica Neue;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+#footer h2 {
+	color:#666d79;
+	font-weight:400;
+	font-size:13px;
+	line-height: 1.4;
+	margin:30px 0px 10px;
+	font-family: Helvetica Neue;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+#footer a {
+	color: #666d79;  /*  p font color slider div  */
+	font-size:13px;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+	font-weight: 300;
+	display: inline-block;
+	text-decoration: none;
+	margin: 15px 0px 0px 0px;
+}
+
+#footer a:hover{
+	opacity: 0.7;
+}
+
+#footer-info a:link, a:visited, a:active {outline:0;}
+
+/*-----------------------------------------------------------------------------------*/
+/* FOOTER-INNER 
+/*-----------------------------------------------------------------------------------*/
+
+#footer-inner {
+  position: relative; /* positon makes the menubar be a 100% of the screen */
+  margin: 0 auto;
+  width: 800px;
+  padding: 0px 0px 0px 0px;
+  background: #fff;  /* Header background 58c0ed */
+}
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/* TermsContainer 
+/*-----------------------------------------------------------------------------------*/
+
+
+.termscontainer {
+  position:relative; /* positon makes the menubar be a 100% of the screen */
+  width: 100%;
+  margin:0 auto;
+  background: #fff;  /* Header background */
+}
+
+.termscontainer h3 {
+	color: #58c0ed;
+	font-weight:400;
+	font-size:15px;
+	line-height: 1.4;
+	margin:10px 0px 0px;
+	font-family: Helvetica Neue;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+	text-decoration: none;
+}
+
+.termscontainer h2 {
+	color: #58c0ed;
+	font-weight:400; 
+	font-size:14px;
+	line-height: 1.4;
+	margin:20px 0px 0px;
+	font-family: Helvetica Neue;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+	text-decoration: none;
+}
+
+.termscontainer p {
+	color: #666d79;
+	font-weight:400;
+	font-size:13px;
+	line-height: 1.4;
+	margin:2px 0px 0px;
+	font-family: Helvetica Neue;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+	text-decoration: none;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* Terms-inner 
+/*-----------------------------------------------------------------------------------*/
+
+.terms-inner {
+  position: relative; /* positon makes the menubar be a 100% of the screen */
+  margin: 0 auto;
+  width: 750px;
+  padding: 80px 0px 110px 0px;
+  background: #fff;  /* Header background 58c0ed */
+}
+
+.terms-inner img {
+    margin-top: 180px;
+    text-align: center;
+}
+
+.terms-inner a {
+	color:#666d79;
+	font-weight:400;
+	font-size:13px;
+	line-height: 1.4;
+	font-family: Helvetica Neue;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+	text-decoration: none;
+}
+
+.terms-inner a:hover {
+	opacity: 0.7;
+}
+
+.terms-inner a:link, a:visited, a:active {outline:0;}
+
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/* ContentContainer - for download page
+/*-----------------------------------------------------------------------------------*/
+
+
+.ContentContainer {
+  position:relative; /* positon makes the menubar be a 100% of the screen */
+  width: 100%;
+  margin:0 auto;
+  background: #58c0ed;  /* Header background */
+}
+
+.ContentContainer h1 {
+	color: #fff;
+	font-weight:400;
+	font-size:14px;
+	line-height: 1.4;
+	margin:10px 0px 0px;
+	font-family: Helvetica Neue;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+	text-decoration: none;
+}
+
+.ContentContainer p {
+	color: #fff;
+	font-weight:400;
+	font-size:12px;
+	line-height: 1.4;
+	margin:2px 0px 0px;
+	font-family: Helvetica Neue;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+	text-decoration: none;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* ContentContainer-inner - for download page
+/*-----------------------------------------------------------------------------------*/
+
+.ContentContainer-inner {
+  position: relative; /* positon makes the menubar be a 100% of the screen */
+  margin: 0 auto;
+  width: 668px;
+  padding: 100px 0px 650px 0px;
+  background: #58c0ed;  /* Header background 58c0ed */
+}
+
+.ContentContainer-inner a:hover {
+	opacity: 0.7;
+}
+
+.ContentContainer-inner a:link, a:visited, a:active {outline:0;}
+
+.phone{
+    width: 308px;
+    height: 539px;
+    float: left;
+    position: relative;
+    background-image: url("../images/phone.png");
+ }
+
+ .video {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 37px;
+    background: #FFF;
+    width: 236px;
+    height: 246px;
+ }
+
+ .downloadnow {
+    position: relative;
+    top: 50px;
+    left: 35px;
+    float:left;
+    background: #58c0ed;
+    margin: 0px 0px 0px 0px;
+    width: 308px;
+    height: 400px;
+ }
+
+ .downloadnow h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 100px;
+    font-family: Helvetica Neue;
+    color: #fff;
+    font-weight:400;
+    line-height: 1.4;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
+
+.downloadnow a {
+	color:#fff;
+	font-weight:400;
+	font-size:12px;
+	margin-left: 79px;
+	margin-right: 79px;
+	margin-top: 1000px;
+	line-height: 1.4;
+	font-family: Helvetica Neue;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+	text-decoration: none;
+}
+
+.downloadnow hr {
+    border: 0;
+    height: 0;
+    width: 200px;
+    border-top: 1px solid #fff;
+    margin-top: 40px;
+}
+
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/* SECTIONS page-sections  
+/*-----------------------------------------------------------------------------------*/
+
+.sections-green {
+  position:relative; /* positon makes the menubar be a 100% of the screen */
+  width: 100%;
+  margin:0 auto;
+  background: #46bb97;  /* Header background */
+}
+
+.sections-lightblue {
+  position:relative; /* positon makes the menubar be a 100% of the screen */
+  width: 100%;
+  margin:0 auto;
+  background: #58c0ed;  /* Header background */
+}
+
+.sections-darkgrey {
+  position:relative; /* positon makes the menubar be a 100% of the screen */
+  width: 100%;
+  margin:0 auto;
+  background: #434a55;  /* Header background */
+}
+
+.sections-red {
+  position:relative; /* positon makes the menubar be a 100% of the screen */
+  width: 100%;
+  margin:0 auto;
+  background: #d54651;  /* Header background */
+}
+
+.sections-black {
+  position:relative; /* positon makes the menubar be a 100% of the screen */
+  width: 100%;
+  margin:0 auto;
+  background: #000;  /* Header background */
+}
+
+.sections-white {
+  position:relative; /* positon makes the menubar be a 100% of the screen */
+  width: 100%;
+  margin:0 auto;
+  background: #fff;  /* Header background */
+}
+
+.sections-coupon {
+  position:relative; /* positon makes the menubar be a 100% of the screen */
+  width: 100%;
+  margin:0 auto;
+}
+
+.sections-jobsimage{
+  position:relative; /* positon makes the menubar be a 100% of the screen */
+  width: 100%;
+  height: 510px;
+  margin:0 auto;
+  background:#fff url(../images/jobs.png)no-repeat center; /* Color for slider div. Add fixed to create Parallax function */
+  background-size: cover;
+}
+
+.sections-competitionimage {
+  position:relative; /* positon makes the menubar be a 100% of the screen */
+  width: 100%;
+  height: 510px;
+  margin:0 auto;
+  background:#fff url(../images/CreateCompetition.png)no-repeat center; /* Color for slider div. Add fixed to create Parallax function */
+  background-size: cover;
+}
+
+.sections-gamecenter {
+  position:relative; /* positon makes the menubar be a 100% of the screen */
+  width: 100%;
+  height: 510px;
+  margin:0 auto;
+  background:#fff url(../images/GameCenter.png)no-repeat center; /* Color for slider div. Add fixed to create Parallax function */
+  background-size: cover;
+}
+
+.sections-howitworks {
+  position:relative; /* positon makes the menubar be a 100% of the screen */
+  width: 100%;
+  height: 510px;
+  margin:0 auto;
+  background:#fff url(../images/HowItWorks.png)no-repeat center; /* Color for slider div. Add fixed to create Parallax function */
+  background-size: cover;
+}
+.sections-advertise {
+  position:relative; /* positon makes the menubar be a 100% of the screen */
+  width: 100%;
+  height: 510px;
+  margin:0 auto;
+  background:#fff url(../images/WhyCompetitions.png)no-repeat center; /* Color for slider div. Add fixed to create Parallax function */
+  background-size: cover;
+}
+
+.sections-jagarenvinnare {
+  position:relative; /* positon makes the menubar be a 100% of the screen */
+  width: 100%;
+  height: 510px;
+  margin:0 auto;
+  background:#fff url(../images/jagarenvinnare.png)no-repeat center; /* Color for slider div. Add fixed to create Parallax function */
+  background-size: cover;
+  /*border-bottom: 1px solid #e7e9ee;*/
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* Sections-inner 
+/*-----------------------------------------------------------------------------------*/
+
+.sections-inner {
+  position: relative; /* positon makes the menubar be a 100% of the screen */
+  margin: 0 auto;
+  width: 750px;
+  padding: 80px 0px 110px 0px;
+}
+
+.sections-inner h3 {
+	color: #666d79;
+	font-weight:400;
+	font-size:28px;
+	line-height: 1.4;
+	margin:60px 0px 0px;
+	font-family: Helvetica Neue;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+	text-decoration: none;
+}
+
+.sections-inner h2 {
+	color: #666d79;
+	font-weight:400;
+	font-size:16px;
+	line-height: 1.4;
+	margin:20px 0px 0px;
+	font-family: Helvetica Neue;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+	text-decoration: none;
+}
+
+.sections-inner p {
+	color: #666d79;
+	font-weight:400;
+	font-size:13px;
+	line-height: 1.4;
+	margin:2px 0px 0px;
+	font-family: Helvetica Neue;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+	text-decoration: none;
+}
+
+.sections-inner img {
+	margin-top: 70px;
+    text-align: center;
+}
+
+.sections-inner a {
+	color:#666d79;
+	font-weight:400;
+	font-size:13px;
+	line-height: 1.4;
+	font-family: Helvetica Neue;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+	text-decoration: none;
+}
+
+.sections-inner a:hover {
+	opacity: 0.7;
+}
+
+.sections-inner a:link, a:visited, a:active {outline:0;}
+
+
+/*-----------------------------------------------------------------------------------*/
+/* Coupon-inner 
+/*-----------------------------------------------------------------------------------*/
+
+.coupon-inner {
+  position: relative; /* positon makes the menubar be a 100% of the screen */
+  margin: 0 auto;
+  width: 100%;
+  padding: 0px 0px 0px 0px;
+}
+
+.coupon-inner h3 {
+  color: #FFFFFF;
+  font-weight:800;
+  font-size: 25px;
+  line-height: 1.4;
+  margin:20px 0px 0px 0px;
+  font-family: Bebas Neue;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  text-align: center;
+}
+
+.coupon-inner h2 {
+  color: #fff;
+  font-weight:400;
+  font-size:16px;
+  line-height: 1.4;
+  margin:20px 0px 0px;
+  font-family: Helvetica Neue;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+.coupon-inner p {
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  margin-top: 10px;
+  margin-left: 60px;
+  margin-right: 60px;
+  font-family: Helvetica Neue;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  text-align: center;
+}
+
+.coupon-inner img {
+  margin-top: 0px;
+  text-align: center;
+}
+
+.coupon-inner a {
+  color:#666d79;
+  font-weight:400;
+  font-size:13px;
+  line-height: 1.4;
+  font-family: Helvetica Neue;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+.coupon-inner span {
+  color:#FFFFFF;
+  font-weight:500;
+  font-size:24px;
+  line-height: 1.4;
+  font-family: Helvetica Neue;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+.coupon-inner a:hover {
+  opacity: 0.7;
+}
+
+.coupon-inner a:link, a:visited, a:active {outline:0;}
+
+
+/*-----------------------------------------------------------------------------------*/
+/* FORMS
+/*-----------------------------------------------------------------------------------*/
+
+
+.form { /* Denna används för alla forms */ 
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+
+.createInput { /* Denna används för alla forms */ 
+  height: 35px;
+  width: 100%;
+  background: #e7e9ee; 
+  text-align: center;
+  border: none;
+  font-family: Helvetica Neue;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-indent: 5%;
+  border-radius: 5px;
+  border-color: #e7e9ee;
+  margin: 5px 0 5px 0;
+}
+
+.createInput:focus {
+  background: #ccd1da; 
+  color: #434a55;
+}
+
+.createInput:hover {
+}
+
+.dateInput { /* Denna används för alla forms */ 
+  height: 35px;
+  width:120px;
+  background: #e7e9ee; 
+  text-align: center;
+  border: none;
+  font-family: Helvetica Neue;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-indent: 5%;
+  border-radius: 5px;
+  border-color: #e7e9ee;
+  margin: 5px 0 5px 0;
+
+}
+
+.dateInput:focus {
+  background: #ccd1da; 
+  color: #434a55;
+}
+
+.dateInput:hover {
+}
+
+
+.valueInput { /* Denna används för alla forms */ 
+  height: 35px;
+  width:200px;
+  background: #e7e9ee; 
+  text-align: center;
+  border: none;
+  font-family: Helvetica Neue;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-indent: 5%;
+  border-radius: 5px;
+  border-color: #e7e9ee;
+
+}
+
+.valueInput:focus {
+  background: #ccd1da; 
+  color: #434a55;
+}
+
+.valueInput:hover {
+  background: #ccd1da; 
+  color: #434a55;
+}
+
+.DateInputAnalytics { /* Denna används för alla forms */ 
+  height: 35px;
+  width:140px;
+  background: #e7e9ee; 
+  text-align: center;
+  border: none;
+  font-family: Helvetica Neue;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-indent: 5%;
+  border-radius: 5px;
+  border-color: #e7e9ee;
+
+}
+
+.DateInputAnalytics:focus {
+  background: #ccd1da; 
+  color: #434a55;
+}
+
+.DateInputAnalytics:hover {
+}
+
+/* SUBMIT BUTTONS */
+.createInput_submitButton { /* Denna används för alla knappar */
+  width: 100%;
+  height: 40px;
+  background: #666d79;
+  font-family: Helvetica Neue;
+  font-weight: bold;
+  font-size: 12px;
+  color: #fff;
+  letter-spacing: 1px;
+  border-color: #666d79;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px 0 5px 0;
+  transition: background .3s ease-in-out;
+}
+
+.createInput_submitButton:hover {
+  background: #aab1be;
+    border-color: #aab1be;
+}
+
+.createInput_couponButton { /* Denna används för alla knappar */
+  /* This hopefully removes the border-radius in safari on ios */
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  width: 200px;
+  height: 75px;
+  background: #46bb97;
+  font-family: Helvetica Neue;
+  font-weight: bold;
+  font-size: 12px;
+  color: #fff;
+  letter-spacing: 1px;
+  /*border-color: #46bb97;*/
+  /*border-radius: 5px;*/
+  cursor: pointer;
+  margin: 5px 0 5px 0;
+  transition: background .3s ease-in-out;
+}
+
+.createInput_couponButton:hover {
+  background: #aab1be;
+    border-color: #aab1be;
+}
+
+.createInput_couponButton2 { /* Denna används för alla knappar */
+  /* This hopefully removes the border-radius in safari on ios */
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  width: 75%;
+  height: 55px;
+  background: #666d79;
+  font-family: Helvetica Neue;
+  font-weight: bold;
+  font-size: 12px;
+  color: #fff;
+  letter-spacing: 1px;
+  border-color: #46bb97;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px 0 5px 0;
+  transition: background .3s ease-in-out;
+}
+
+.createInput_couponButton2:hover {
+  background: #aab1be;
+  border-color: #aab1be;
+}
+
+.DateInputAnalytics_submitButton { /* Denna används för alla knappar */
+  width: 140px;
+  height: 38px;
+  background: #58c0ed;
+  font-family: Helvetica Neue;
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: 1px;
+  border-color: #58c0ed;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0px 0px 40px 10px;
+  transition: background .3s ease-in-out;
+}
+
+.DateInputAnalytics_submitButton:hover {
+  background: #3c68b0;
+    border-color: #58c0ed;
+}
+
+/* ------- createInputTextarea  ---------------- */
+.createInputTextarea { 
+  background: #e7e9ee; 
+  border: none;
+  font-family: Helvetica Neue;
+  font-size: 12px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  border-color: #e7e9ee;
+  margin: 0px 0px 0px 50px;
+
+}
+
+.createInputTextarea:focus {
+  background: #ccd1da; 
+  color: #434a55;
+  font-family: Helvetica Neue;
+  font-size: 12px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
+
+.createInputTextarea:hover {
+  background: #ccd1da; 
+  color: #434a55;
+  font-family: Helvetica Neue;
+  font-size: 12px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* ADJUSTMENTS FOR DIFFERENT SCREEN SIZES
+/*-----------------------------------------------------------------------------------*/
+
+
+/* #PC FROM 1920px (width)
+================================================== */
+
+/* Note: Design for a width of 1920 */
+@media only screen and (min-width: 1900px){
+
+.terms-inner {
+  position: relative; /* positon makes the menubar be a 100% of the screen */
+  margin: 0 auto;
+  padding: 80px 0px 110px 0px;
+  width:750px;
+  background: #fff;  /* Header background 58c0ed */
+}
+
+.termscontainer p {
+  color: #666d79;
+  font-weight:400;
+  font-size:15px;
+  line-height: 1.4;
+  margin:2px 0px 0px;
+  font-family: Helvetica Neue;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+.backgroundContainer {
+  position:relative; /* positon makes the menubar be a 100% of the screen */
+  height:100%;
+  width: 100%;
+}
+
+#homepage {
+  /*display: none;*/
+  position: relative; /* positon makes the menubar be a 100% of the screen */
+  margin: 0 auto;
+  height:540px;
+  width: 90%;
+  padding: 110px 0px 0px 0px;
+}
+
+#homepage img {
+    margin-top: 100px;
+    text-align: center;
+}
+
+
+.sections-inner {
+  width: 1000px;
+  padding: 80px 0px 80px 0px;
+}
+
+.sections-inner h3 {
+  font-size:38px;
+}
+
+.sections-inner h2 {
+  font-size:17px;
+}
+
+.sections-inner p {
+  font-size:14px;
+}
+
+.sections-jobsimage {
+  height: 520px;
+}
+
+.sections-competitionimage {
+  height: 520px;
+}
+
+.sections-gamecenter {
+  height: 520px;
+}
+
+.sections-howitworks {
+  height: 520px;
+}
+.sections-advertise {
+  height: 520px;
+}
+
+.sections-jagarenvinnare {
+  height: 520px;
+}
+
+.terms-inner {
+  padding: 80px 0px 40px 0px;
+  width:90%;
+}
+
+.termscontainer h3 {
+  font-size:15px;
+}
+
+.termscontainer h2 {
+  font-size:15px;
+}
+
+.termscontainer p {
+  font-size:13px;
+}
+
+.terms-inner a {
+  font-size:13px;
+}
+
+#footer h3 {
+  font-size:16px;
+  margin:25px 0px 5px;
+}
+
+#footer h2 {
+  font-size:16px;
+  margin:25px 0px 5px;
+}
+
+#footer a {
+  font-size:14px;
+  margin: 7px 0px 0px 7px;
+}
+
+
+
+}
+
+/* CLOSING  #PC FROM 1920px (width)
+================================================== */
+
+
+
+/* #PC FROM 1300px - 1919px (width)
+================================================== */
+@media only screen and (min-width: 1300px) and (max-width: 1919px) {
+
+.terms-inner {
+  position: relative; /* positon makes the menubar be a 100% of the screen */
+  margin: 0 auto;
+  padding: 80px 0px 110px 0px;
+  width:1100px;
+  background: #fff;  /* Header background 58c0ed */
+}
+
+.termscontainer p {
+	color: #666d79;
+	font-weight:400;
+	font-size:15px;
+	line-height: 1.4;
+	margin:2px 0px 0px;
+	font-family: Helvetica Neue;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+	text-decoration: none;
+}
+
+}
+
+/* CLOSING PC FROM 1300px - 1919px (width)
+================================================== */
+
+
+/* #PC FROM 800px - 1299px (width)
+================================================== */
+@media only screen and (min-width: 800px) and (max-width: 1299px) {
+
+.terms-inner {
+  position: relative; /* positon makes the menubar be a 100% of the screen */
+  margin: 0 auto;
+  padding: 80px 0px 110px 0px;
+  width:750px;
+  background: #fff;  /* Header background 58c0ed */
+}
+
+.termscontainer p {
+	color: #666d79;
+	font-weight:400;
+	font-size:15px;
+	line-height: 1.4;
+	margin:2px 0px 0px;
+	font-family: Helvetica Neue;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+	text-decoration: none;
+}
+
+.backgroundContainer {
+  position:relative; /* positon makes the menubar be a 100% of the screen */
+  height:100%;
+  width: 100%;
+}
+
+#homepage {
+  /*display: none;*/
+  position: relative; /* positon makes the menubar be a 100% of the screen */
+  margin: 0 auto;
+  height:48f0px;
+  width: 90%;
+  padding: 110px 0px 0px 0px;
+}
+
+#homepage img {
+    margin-top: 100px;
+    text-align: center;
+}
+
+
+.sections-inner {
+  width: 90%;
+  padding: 40px 0px 40px 0px;
+}
+
+.sections-jobsimage {
+  height: 480px;
+}
+
+.sections-competitionimage {
+  height: 480px;
+}
+
+.sections-gamecenter {
+  height: 480px;
+}
+
+.sections-howitworks {
+  height: 480px;
+}
+.sections-advertise {
+  height: 480px;
+}
+
+.sections-jagarenvinnare {
+  height: 480px;
+}
+
+.terms-inner {
+  padding: 80px 0px 40px 0px;
+  width:90%;
+}
+
+.termscontainer h3 {
+  font-size:15px;
+}
+
+.termscontainer h2 {
+  font-size:15px;
+}
+
+.termscontainer p {
+  font-size:13px;
+}
+
+.terms-inner a {
+  font-size:13px;
+}
+
+/* FOOTER */
+.column, .columns {
+ margin: 0 auto;
+ float:none;
+}
+
+.four {
+
+width: 90%;
+
+}
+
+#footer {
+  padding:40px 0px 0px 0px;
+  margin-bottom: 50px;
+}
+
+#footer-inner {
+  position: relative; /* positon makes the menubar be a 100% of the screen */
+  margin: 0 auto;
+  width: 90%;
+  padding: 0px 0px 0px 0px;
+  background: #fff;  /* Header background 58c0ed */
+}
+
+#footer h3 {
+  font-size:15px;
+  margin:25px 0px 5px;
+}
+
+#footer h2 {
+  font-size:15px;
+  margin:25px 0px 5px;
+}
+
+#footer a {
+  font-size:13px;
+  margin: 7px 0px 0px 7px;
+}
+
+}
+
+/* CLOSING PC FROM 800px - 1299px (width)
+================================================== */
+
+
+
+/*  #Mobile  and Ipad 300px - 799px (width)
+================================================== */
+
+@media only screen and (min-width: 0px) and (max-width: 799px) {
+
+.backgroundContainer {
+  position:relative; /* positon makes the menubar be a 100% of the screen */
+  height:100%;
+  width: 100%;
+}
+
+#homepage {
+  /*display: none;*/
+  position: relative; /* positon makes the menubar be a 100% of the screen */
+  margin: 0 auto;
+  height:350px;
+  width: 90%;
+  padding: 110px 0px 0px 0px;
+}
+
+#homepage img {
+    margin-top: 70px;
+    text-align: center;
+}
+.ContentContainer-inner {
+  height: 850px;
+  width: 100%;
+  padding: 100px 0px 0px 0px;
+}
+
+.phone{
+    float: none;
+    margin: 0 auto;
+ }
+
+ .downloadnow {
+    position: relative;
+    top: 50px;
+    left: 0px;
+    width: 300px;
+    height: 100px;
+    float:none;
+    background: #58c0ed;
+    margin: 0 auto;
+ }
+
+  .downloadnow h2 {
+    margin-top: 0px;
+}
+
+
+.sections-inner {
+  width: 90%;
+  padding: 40px 0px 40px 0px;
+}
+
+.sections-jobsimage {
+  height: 300px;
+}
+
+.sections-competitionimage {
+  height: 300px;
+}
+
+.sections-gamecenter {
+  height: 300px;
+}
+
+.sections-howitworks {
+  height: 300px;
+}
+.sections-advertise {
+  height: 300px;
+}
+
+.sections-jagarenvinnare {
+  height: 300px;
+}
+
+.terms-inner {
+  padding: 80px 0px 40px 0px;
+  width:90%;
+}
+
+.termscontainer h3 {
+	font-size:15px;
+}
+
+.termscontainer h2 {
+	font-size:15px;
+}
+
+.termscontainer p {
+	font-size:13px;
+}
+
+.terms-inner a {
+	font-size:13px;
+}
+
+/* FOOTER */
+.column, .columns {
+ margin: 0 auto;
+ float:none;
+}
+
+.four {
+
+width: 90%;
+
+}
+
+#footer {
+	padding:40px 0px 0px 0px;
+	margin-bottom: 50px;
+}
+#footer-inner {
+  position: relative; /* positon makes the menubar be a 100% of the screen */
+  margin: 0 auto;
+  width: 90%;
+  padding: 0px 0px 0px 0px;
+  background: #fff;  /* Header background 58c0ed */
+}
+
+#footer h3 {
+	font-size:15px;
+	margin:25px 0px 5px;
+}
+
+#footer h2 {
+	font-size:15px;
+	margin:25px 0px 5px;
+}
+
+#footer a {
+	font-size:13px;
+	margin: 7px 0px 0px 7px;
+}
+
+}
+
+/*  CLOSING - #Mobile  and Ipad 300px - 799px (width)
+===============================================================  */
+
+/*-----------------------------------------------------------------------------------*/
+/* BOUNCING- ARROW STYLES
+/*-----------------------------------------------------------------------------------*/
+
+
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+  
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+  
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+ 
+}
+
+.arrow {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  margin-bottom: 50px;
+  /*background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yOTMuNzUxLDQ1NS44NjhjLTIwLjE4MSwyMC4xNzktNTMuMTY1LDE5LjkxMy03My42NzMtMC41OTVsMCwwYy0yMC41MDgtMjAuNTA4LTIwLjc3My01My40OTMtMC41OTQtNzMuNjcyICBsMTg5Ljk5OS0xOTBjMjAuMTc4LTIwLjE3OCw1My4xNjQtMTkuOTEzLDczLjY3MiwwLjU5NWwwLDBjMjAuNTA4LDIwLjUwOSwyMC43NzIsNTMuNDkyLDAuNTk1LDczLjY3MUwyOTMuNzUxLDQ1NS44Njh6Ii8+DQo8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMjIwLjI0OSw0NTUuODY4YzIwLjE4LDIwLjE3OSw1My4xNjQsMTkuOTEzLDczLjY3Mi0wLjU5NWwwLDBjMjAuNTA5LTIwLjUwOCwyMC43NzQtNTMuNDkzLDAuNTk2LTczLjY3MiAgbC0xOTAtMTkwYy0yMC4xNzgtMjAuMTc4LTUzLjE2NC0xOS45MTMtNzMuNjcxLDAuNTk1bDAsMGMtMjAuNTA4LDIwLjUwOS0yMC43NzIsNTMuNDkyLTAuNTk1LDczLjY3MUwyMjAuMjQ5LDQ1NS44Njh6Ii8+DQo8L3N2Zz4=);
+  */
+  background :url(../images/arrow.png) no-repeat center center; 
+  background-size: contain;
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+
+/* -------- END ERROW ------------- */
+
+
